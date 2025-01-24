@@ -5,21 +5,21 @@
   "bbox_bottom":520,
   "bbox_left":0,
   "bbox_right":1644,
-  "bbox_top":0,
+  "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9f3648b6-0504-4de3-9d61-6617d87515ca","name":"9f3648b6-0504-4de3-9d61-6617d87515ca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a3759f8b-8ed1-4929-be40-896d82d50cfb","name":"a3759f8b-8ed1-4929-be40-896d82d50cfb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":521,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b596b81a-0c0e-4578-ba4a-c0dd8c96c693","blendMode":0,"displayName":"default","isLocked":false,"name":"b596b81a-0c0e-4578-ba4a-c0dd8c96c693","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"47d764ac-47b1-416d-afa3-7ccc49715743","blendMode":0,"displayName":"default","isLocked":false,"name":"47d764ac-47b1-416d-afa3-7ccc49715743","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_well_done_banner",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9f3648b6-0504-4de3-9d61-6617d87515ca","path":"sprites/spr_well_done_banner/spr_well_done_banner.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d4197fb9-a6bc-45a7-bdf8-3b0408b965ae","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a3759f8b-8ed1-4929-be40-896d82d50cfb","path":"sprites/spr_well_done_banner/spr_well_done_banner.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8f2a91e0-62fa-4b98-890c-dcd72e3791bb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
