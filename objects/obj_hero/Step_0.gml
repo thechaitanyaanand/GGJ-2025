@@ -15,7 +15,7 @@ keep_in_room();
 // This is also done in enemies, with the
 // result being instances higher up on the screen
 // being drawn first.
-depth = -y;
+depth = 400;
 
 // Find the nearest enemy.
 // And reset the distance to some high number.
