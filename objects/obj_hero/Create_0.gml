@@ -1,10 +1,13 @@
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
 
+
+
 // Set the starting hitpoints of the player (to the max).
 hitpoints = hitpoints_max;
 
 // Variables for tracking enemies.
+nearest_enemy_assign=undefined;
 nearest_enemy = undefined;
 nearest_distance = 1000;
 

@@ -2,7 +2,7 @@
 event_inherited();
 
 // Set max hitpoints specifically for this enemy type.
-hitpoints_max = 3 * global.enemy_health_bonus;
+hitpoints_max = 2 * global.enemy_health_bonus;
 
 // Set hitpoints specifically for this enemy type.
 hitpoints = hitpoints_max;

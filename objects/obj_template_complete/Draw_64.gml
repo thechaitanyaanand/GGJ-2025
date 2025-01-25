@@ -27,7 +27,7 @@ draw_text(x, y - 10, string("WELL DONE"));
 draw_set_font(fnt_small_medium);
 
 // Draw game over text.
-draw_text(x, y + 30, string("You have completed the template!"));
+draw_text(x, y + 30, string("You have defeated the Final Boss!"));
 
 // Reset text alignments
 draw_set_halign(fa_left);
