@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"sRock",
-    "path":"sprites/sRock/sRock.yy",
+    "name":"sBubble_Rock2",
+    "path":"sprites/sBubble_Rock2/sBubble_Rock2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
