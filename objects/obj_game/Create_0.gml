@@ -1,5 +1,7 @@
 // Start the game music on a loop.
 audio_play_sound(snd_music_game, 0, true);
+//to know if game boss is dead or not
+global.bossdead = 0;
 
 // Set the flag to say the game is not paused
 global.paused = false;
@@ -74,6 +76,14 @@ spawn_enemy = function()
 		// pigun, pumpkill or rooster.
 		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);
 	}
+	if (global.level > 8)
+	{
+		// Change the enemy type to either
+		// pigun, pumpkill or rooster.
+		_enemy = choose(obj_pigun, obj_rooster);
+	}
+	
+	
 
 	// We want to spawn enemyes around the player.
 	// So we first get a random direction (0 to 360).

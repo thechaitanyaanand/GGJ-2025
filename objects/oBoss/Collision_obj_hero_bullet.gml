@@ -23,8 +23,8 @@ if (hitpoints > 0)
 	_text.text = -global.shooting[? "damage"];
 
 	// Set our sprite to the hit sprite.
-	sprite_index = hit_sprite;
-	image_index = 0;
+	//sprite_index = hit_sprite;
+	//image_index = 0;
 	
 	// Reduce hitpoints by the damage caused by the shooting weapon.
 	hitpoints -= global.shooting[? "damage"];
@@ -32,6 +32,7 @@ if (hitpoints > 0)
 	// If our hitpoints has reached zero...
 	if (hitpoints <= 0)
 	{
+		global.bossdead = 1;
 		// Destroy this instance.
 		instance_destroy();
 	}

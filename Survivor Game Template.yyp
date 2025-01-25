@@ -96,6 +96,7 @@
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_upgrade_screen","path":"objects/obj_upgrade_screen/obj_upgrade_screen.yy",},},
     {"id":{"name":"obj_upgrade","path":"objects/obj_upgrade/obj_upgrade.yy",},},
+    {"id":{"name":"oBoss","path":"objects/oBoss/oBoss.yy",},},
     {"id":{"name":"oEnemyDragon","path":"objects/oEnemyDragon/oEnemyDragon.yy",},},
     {"id":{"name":"oRock","path":"objects/oRock/oRock.yy",},},
     {"id":{"name":"oTree_Trunk","path":"objects/oTree_Trunk/oTree_Trunk.yy",},},
