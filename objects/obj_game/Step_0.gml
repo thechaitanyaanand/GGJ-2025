@@ -1,6 +1,9 @@
+
+
 // If the game is NOT over...
 if (!instance_exists(obj_game_over))
-{
+{	
+
 	// If the hero has run out of hitpoints...
 	if (obj_hero.hitpoints <= 0)
 	{
@@ -34,6 +37,10 @@ if (!instance_exists(obj_game_over))
 // We do this by checking is an end game screen is present.
 if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 {
+			if(global.bossdead == 1)
+	{
+	instance_create_layer(1920 / 2, 1080 / 2, "Instances", obj_template_complete);
+	}	
 	// If we have reached the experience goal...
 	if (global.xp >= global.xp_goal)
 	{
@@ -68,18 +75,20 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 			if(!global.bossdead == 1)
 		{
 			instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
+
 		}
 			
 		}
-		else
-		{
-			instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
-			global.level += 1;
-			next_wave();
-		}
+	else
+	{
+		instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
+		global.level += 1;
+		next_wave();
+
+	}
 		if(global.bossdead == 1)
 		{
-			instance_create_layer(1920 / 2, 1080 / 2, "UpgradeScreen", obj_template_complete);
+			instance_create_layer(1920 / 2, 1080 / 2, "Instances", obj_template_complete);
 		}
 	}
 }

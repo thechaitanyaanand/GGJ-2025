@@ -82,5 +82,5 @@ if (hero_trail_cooldown <= 0)
 	hero_trail();	
 }
 //boss spawn location
-global.bspawnx = obj_hero.x + 500;
+global.bspawnx = obj_hero.x + 1000;
 global.bspawny = obj_hero.y;
