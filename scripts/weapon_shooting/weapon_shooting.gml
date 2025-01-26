@@ -9,7 +9,7 @@ function weapon_shooting_reset()
 {
 	// Shooting weapon bases stats.
 	// Shooting weapon starts unlocked as it's the first weapon.
-	ds_map_replace(global.shooting, "damage", 0.75);
+	ds_map_replace(global.shooting, "damage", 0.50);
 	ds_map_replace(global.shooting, "attack_speed", 30);
 	ds_map_replace(global.shooting, "number_of_shots", 1);
 	ds_map_replace(global.shooting, "unlocked", true);

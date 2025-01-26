@@ -51,7 +51,7 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 	
 		// If we are on the last wave...
 		
-		if (global.level > 10)
+		if (global.level > 9)
 		{
 			if(!global.bossdead==1)
 			{	if(!instance_exists(oEnemyDragon))
