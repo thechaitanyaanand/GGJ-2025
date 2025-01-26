@@ -53,19 +53,19 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 		
 		if (global.level > 10)
 		{
-			
-			if(!instance_exists(oEnemyDragon))
-			{
-			instance_create_layer(global.bspawnx, global.bspawny, "Instances", oEnemyDragon);
+			if(!global.bossdead==1)
+			{	if(!instance_exists(oEnemyDragon))
+				{
+				instance_create_layer(global.bspawnx, global.bspawny, "Instances", oEnemyDragon);
+				}
+				// Level up!
+				global.level += 1;
+		
+				// Execute function to go to the next wave.
+				next_wave();
 			}
-			// Level up!
-			global.level += 1;
-		
-			// Execute function to go to the next wave.
-			next_wave();
-		
 			// Create the upgrade screen.
-			if(!global.bossdead = 1)
+			if(!global.bossdead == 1)
 		{
 			instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
 		}
@@ -77,7 +77,7 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 			global.level += 1;
 			next_wave();
 		}
-		if(global.bossdead = 1)
+		if(global.bossdead == 1)
 		{
 			instance_create_layer(1920 / 2, 1080 / 2, "UpgradeScreen", obj_template_complete);
 		}
