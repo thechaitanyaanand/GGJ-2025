@@ -30,7 +30,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			audio_play_sound(snd_ui_select, 0, false);
 			
 			// Go to main game room.
-			room_goto(rm_game);
+			room_goto(Story);
 		}
 	}
 }
