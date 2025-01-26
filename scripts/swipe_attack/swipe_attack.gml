@@ -2,7 +2,7 @@
 function swipe_attack() 
 {
 	// If any enemy was found...
-	if (nearest_enemy)
+	if (nearest_enemy_assign)
 	{
 		// Play attack sound effect.
 		audio_play_sound(snd_attack_chimes_1, 0, false);

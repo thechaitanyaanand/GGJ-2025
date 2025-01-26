@@ -2,7 +2,7 @@
 function attack_trail() 
 {
 	// If there is an enemy found...
-	if (nearest_enemy)
+	if (nearest_enemy_assign)
 	{
 		// Play sound effect.
 		audio_play_sound(snd_attack_chimes_2, 0, false);
