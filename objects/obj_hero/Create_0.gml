@@ -1,5 +1,5 @@
 // Set the maximum hitpoints that the player can have.
-hitpoints_max = 10;
+hitpoints_max = 20;
 
 
 

@@ -5,8 +5,16 @@ function shooting_attack()
 	if (instance_exists(nearest_enemy_assign))
 	{
 		// Get the direction from the hero to the enemy.
-		var _direction = point_direction(x, y, nearest_enemy_assign.x, nearest_enemy_assign.y);
-	
+		///
+		if(global.aim_button_state==0)
+		{
+			var _direction = point_direction(x, y, nearest_enemy_assign.x, nearest_enemy_assign.y);
+		}
+		else
+		{
+			var _direction = point_direction(x, y, mouse_x, mouse_y);
+		}
+		///
 		// Get the angle we should start creating bullets aiming towards.
 		var _angle_difference = (global.shooting[? "number_of_shots"] - 1) * 20;
 	
