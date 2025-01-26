@@ -1,7 +1,7 @@
 
 
 // If the game is NOT over...
-if (!instance_exists(obj_game_over))
+if ((!instance_exists(obj_game_over))&&(instance_exists(obj_hero)))
 {	
 
 	// If the hero has run out of hitpoints...
@@ -26,9 +26,9 @@ if (!instance_exists(obj_game_over))
 		pause();
 		
 		// Create game over object.
-		if(global.bossdead=0)
+		if(global.bossdead==0)
 		{
-		instance_create_layer(1920 / 2, 1080 / 2 - 150, "UpgradeScreen", obj_game_over);
+		instance_create_layer(1920 / 2, 1080 / 2 - 150, "Instances", obj_game_over);
 		}
 	}
 }
@@ -37,9 +37,10 @@ if (!instance_exists(obj_game_over))
 // We do this by checking is an end game screen is present.
 if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 {
-			if(global.bossdead == 1)
+			if((global.bossdead == 1)&&(global.over_destroy==0))
 	{
 	instance_create_layer(1920 / 2, 1080 / 2, "Instances", obj_template_complete);
+	global.over_destroy=1;
 	}	
 	// If we have reached the experience goal...
 	if (global.xp >= global.xp_goal)
@@ -67,16 +68,12 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 				}
 				// Level up!
 				global.level += 1;
-		
+				instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
 				// Execute function to go to the next wave.
 				next_wave();
 			}
 			// Create the upgrade screen.
-			if(!global.bossdead == 1)
-		{
-			instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
 
-		}
 			
 		}
 	else
@@ -86,7 +83,7 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 		next_wave();
 
 	}
-		if(global.bossdead == 1)
+		if((global.bossdead == 1)&&(global.over_destroy==0))
 		{
 			instance_create_layer(1920 / 2, 1080 / 2, "Instances", obj_template_complete);
 		}
@@ -105,4 +102,10 @@ if (!global.paused)
 		// Calls spawn enemy function.
 		spawn_enemy();	
 	}
+}
+if((global.bossdead == 1)&&(global.over_destroy==1)&&(global.xp >= global.xp_goal))
+{
+		instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
+		global.level += 1;
+		next_wave();
 }

@@ -12,7 +12,7 @@ draw_set_valign(fa_middle);
 draw_set_colour(c_black);
 
 // Draw retry text.
-draw_text_transformed(x, y + 20, "INFINITE", image_xscale, image_yscale, image_angle);
+draw_text_transformed(x, y + 20, "RETRY", image_xscale, image_yscale, image_angle);
 
 // Reset text alignments
 draw_set_halign(fa_left);

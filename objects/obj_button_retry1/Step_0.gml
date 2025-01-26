@@ -28,15 +28,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			
 			// Restart this room.
 			// Restarting the game.
-	//		room_restart();
-			if (instance_exists(obj_template_complete))
-			{
-				instance_destroy(obj_template_complete);
-				instance_destroy(obj_button_exit);
-				instance_destroy(obj_button_retry);
-				
-				
-			}
+			room_restart();
 		}
 	}
 }
