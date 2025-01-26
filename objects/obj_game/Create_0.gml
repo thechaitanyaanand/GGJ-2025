@@ -16,7 +16,7 @@ global.xp = 0;
 global.level = 1;
 
 // Set the cooldown time for spawning enemies.
-global.enemy_spawn_speed = 60;
+global.enemy_spawn_speed = 75;
 
 // Set starting enemy health bonus.
 // This is a multiplier, and is increased each wave.
@@ -116,3 +116,5 @@ spawn_enemy = function()
 	// Create an enemy at that generated positon.
 	instance_create_layer(_x, _y, "Instances", _enemy);
 }
+
+global.over_destroy=0;
